@@ -1,0 +1,47 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Oskar Steiger | Portfolio</title>
+</head>
+
+<body>
+    {% include navbar.html %}
+    <h1>Portfolio</h1>
+
+    <section>
+        <div class="project-image">
+            <img src="assets/flashcards.jpg" alt="">
+            <!-- images used for decorational purposes only, no alt text needed -->
+        </div>
+        <h2>Review Tools</h2>
+        <p>A website similar to Quizlet which enabled users to create, view, and edit flashcards and quizzes. Uses SvelteKit and T&#8209;SQL with stored procedures.</p>
+    </section>
+
+    <section>
+        <div class="project-image">
+            <img src="assets/sha256.png" alt="">
+        </div>
+        <h2>SHA-256</h2>
+        <p>A reimplementation of the SHA-256 hashing algorithm written in C.</p>
+        <p>This project is available on <a href="https://github.com/steigeo/sha256" target="_blank">GitHub</a>.</p>
+    </section>
+
+    <section>
+        <div class="project-image">
+            <img src="assets/twitter.png" alt="">
+        </div>
+        <h2>Antius</h2>
+        <p>A social media platform similar to X/Twitter, written using Next.js and React. MongoDB was used as the
+            database, bcrypt hashing for authentication, and JSON Web Tokens for authorization.</p>
+        <p>This project is available on <a href="https://github.com/steigeo/antius-social" target="_blank">GitHub</a>.
+        </p>
+    </section>
+</body>
+
+</html>

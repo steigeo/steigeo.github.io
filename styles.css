@@ -1,6 +1,6 @@
 :root {
-    --navbar-color: #e0e0e0;
-    --navbar-color-hover: #d0d0d0;
+    --level-1: #e0e0e0;
+    --level-2: #d0d0d0;
     font-family: sans-serif;
 }
 
@@ -8,7 +8,7 @@ nav {
     height: 3rem;
     margin: 0;
     width: 100%;
-    background-color: var(--navbar-color);
+    background-color: var(--level-1);
     border-radius: 0.25rem;
     -webkit-border-radius: 0.25rem;
     -moz-border-radius: 0.25rem;
@@ -30,7 +30,7 @@ nav>ul>li {
 }
 
 nav>ul>li:nth-child(1) {
-    & >a {
+    &>a {
         border-radius: 0.25rem 0 0 0.25rem;
         -webkit-border-radius: 0.25rem 0 0 0.25rem;
         -moz-border-radius: 0.25rem 0 0 0.25rem;
@@ -51,5 +51,66 @@ nav>ul>li>a {
 }
 
 nav>ul>li>a:hover {
-    background-color: var(--navbar-color-hover)
+    background-color: var(--level-2);
+}
+
+section {
+    background-color: var(--level-1);
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+}
+
+.section-overflow {
+    overflow: hidden;
+    height: 16rem;
+    position: relative;
+    width: 100%;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+}
+
+.section-overflow>div {
+    background: linear-gradient(to bottom,
+            #ffffff00,
+            #ffffffff 100%);
+    position: absolute;
+    width: 100%;
+    top: 12rem;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    cursor: pointer;
+}
+
+.section-overflow>section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+section>h2 {
+    margin: 0;
+}
+
+body>div {
+    margin: 1rem 0;
+}
+
+li>h3 {
+    margin: 0;
+}
+
+li>p {
+    margin: 0;
 }
